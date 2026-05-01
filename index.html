@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power - macOS Battery Pack Monitoring</title>
+  <meta name="description"
+    content="Native macOS application for real-time monitoring of your Bluetooth battery packs." />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HV1JQQCW9J"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HV1JQQCW9J');
+  </script>
+</head>
+
+<body>
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+        </svg>
+        Power App
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="/Power-v0.1.0-macOS.dmg" download class="btn-secondary">Download Beta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-content">
+        <div class="badge">Pre-Release Available</div>
+        <h1 class="fade-up">Master Your <br><span class="text-gradient">Portable Power</span></h1>
+        <p class="fade-up delay-1">The ultimate native macOS application to monitor, track, and manage your Bluetooth
+          battery packs in real-time.</p>
+        <div class="hero-cta fade-up delay-2">
+          <a href="/Power-v0.1.0-macOS.dmg" download class="btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            Download Pre-Release
+          </a>
+          <a href="https://github.com/bossly/powerapp-web/issues/new" target="_blank" class="btn-outline">Provide
+            Feedback</a>
+        </div>
+        <div class="supported-brands fade-up delay-3">
+          <span>Compatible with:</span>
+          <div class="brand-tags">
+            <span class="brand-tag">Ecoflow</span>
+            <span class="brand-tag">Bluetti</span>
+            <span class="brand-tag">Jk-BMS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper fade-up delay-2">
+        <div class="glass-panel screenshot-container">
+          <div class="mac-header">
+            <span class="mac-dot close"></span>
+            <span class="mac-dot minimize"></span>
+            <span class="mac-dot maximize"></span>
+          </div>
+          <img src="/assets/hero-app.png" alt="Power App Screenshot" class="app-screenshot" />
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <div class="section-header">
+        <h2>Seamless Integration</h2>
+        <p>Everything you need to keep your power stations in check.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card glass-panel hover-lift">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+              <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+              <line x1="12" y1="20" x2="12.01" y2="20"></line>
+            </svg>
+          </div>
+          <h3>BLE Auto-Discovery</h3>
+          <p>Automatically discover and connect to compatible battery devices via Bluetooth Low Energy without manual
+            pairing.</p>
+        </div>
+        <div class="feature-card glass-panel hover-lift">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+              <line x1="6" y1="8" x2="6" y2="8"></line>
+              <line x1="6" y1="12" x2="6" y2="12"></line>
+              <line x1="6" y1="16" x2="6" y2="16"></line>
+              <polyline points="10 8 14 12 10 16"></polyline>
+            </svg>
+          </div>
+          <h3>Real-time Data</h3>
+          <p>Track charge levels, input/output wattage, temperatures, and vital status indicators in a beautiful native
+            interface.</p>
+        </div>
+        <div class="feature-card glass-panel hover-lift">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+              </polygon>
+            </svg>
+          </div>
+          <h3>Device Management</h3>
+          <p>Add frequently used devices to your favorites for quick access. Switch between multiple power stations
+            instantly.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+        </svg>
+        Power App
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/bossly/powerapp-web/issues/new" target="_blank">Feedback</a>
+        <a href="https://github.com/bossly/powerapp-web/blob/main/PRIVACY.md" target="_blank">Privacy</a>
+        <a href="https://github.com/bossly/powerapp-web/blob/main/TERMS.md" target="_blank">Terms</a>
+      </div>
+      <p class="copyright">&copy; <span id="year"></span> Power App. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
