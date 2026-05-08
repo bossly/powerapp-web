@@ -40,16 +40,28 @@ jobs:
           echo "🔄 Generating appcast..."
           echo "$SPARKLE_PRIVATE_KEY" | ./sparkle_tools/bin/generate_appcast --ed-key-file - public/
 
+      - name: Update Download Link in index.html
+        run: |
+          LATEST_DMG=$(ls -t public/*.dmg | head -n 1)
+          if [ -n "$LATEST_DMG" ]; then
+            DMG_NAME=$(basename "$LATEST_DMG")
+            echo "🔗 Latest DMG found: $DMG_NAME"
+            # Update all references to .dmg files in index.html
+            sed -i '' "s|href=\"/.*\.dmg\"|href=\"/$DMG_NAME\"|g" index.html
+          else
+            echo "⚠️ No DMG files found in public/"
+          fi
+
       - name: Commit Changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           
-          if [[ -n $(git status -s public/) ]]; then
-            git add public/
-            git commit -m "chore: auto-update appcast.xml and deltas"
+          if [[ -n $(git status -s) ]]; then
+            git add public/ index.html
+            git commit -m "chore: auto-update appcast and download link"
             git push
-            echo "✅ Successfully updated appcast and deltas"
+            echo "✅ Successfully updated repository"
           else
-            echo "ℹ️ No changes to appcast.xml"
+            echo "ℹ️ No changes to commit"
           fi
