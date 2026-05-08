@@ -7,6 +7,17 @@
         <language>en</language>
         <!-- Sparkle's generate_appcast tool will automatically add <item> elements here based on your .zip or .dmg updates -->
         <item>
+            <title>0.1.2</title>
+            <pubDate>Fri, 08 May 2026 17:36:58 +0000</pubDate>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
+            <enclosure url="https://bossly.github.io/powerapp-web/Power-v0.1.2-macOS.dmg" length="1870783" type="application/octet-stream" sparkle:edSignature="9lkZXaifVnEdKDiFCoRw6RMU1LKPrgLuFPWuGUVlSz+UsIUG+4+9hDWxYUqx3J85kGXZ9R+K+Bx6Q0jn56alCg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://bossly.github.io/powerapp-web/Power12-10.delta" sparkle:deltaFrom="10" length="83666" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="980336" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="JAl0OKn2m/HbEZQtI1rLZmtnBTZ6hed6AKesFRTVvPCuc/C/q/h4uWzSg4rJ1JmWytNBcK4ykd1Yvra759MQDQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.1</title>
             <pubDate>Fri, 08 May 2026 16:23:02 +0300</pubDate>
             <sparkle:version>10</sparkle:version>
