@@ -7,6 +7,14 @@
         <language>en</language>
         <!-- Sparkle's generate_appcast tool will automatically add <item> elements here based on your .zip or .dmg updates -->
         <item>
+            <title>0.1.1</title>
+            <pubDate>Fri, 08 May 2026 16:23:02 +0300</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
+            <enclosure url="https://bossly.github.io/powerapp-web/Power-v0.1.1-macOS.dmg" length="1871132" type="application/octet-stream" sparkle:edSignature="xFbeCD7jImtGrJlzwzu8QGql04CdKLytluVrFXk416nIjUglwWtqVWNGpb7owLTuhWuAYquk3Cg6T5Kkxt4BDQ=="/>
+        </item>
+        <item>
             <title>0.1</title>
             <pubDate>Fri, 08 May 2026 15:57:00 +0300</pubDate>
             <sparkle:version>0.1</sparkle:version>

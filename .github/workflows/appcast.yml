@@ -1,0 +1,55 @@
+name: Generate Appcast
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'public/*.dmg'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-appcast:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download Sparkle
+        run: |
+          curl -L -o sparkle.tar.xz https://github.com/sparkle-project/Sparkle/releases/download/2.9.1/Sparkle-2.9.1.tar.xz
+          mkdir -p sparkle_tools
+          tar -xf sparkle.tar.xz -C sparkle_tools
+
+      - name: Generate Appcast
+        env:
+          SPARKLE_PRIVATE_KEY: ${{ secrets.SPARKLE_PRIVATE_KEY }}
+        run: |
+          if [ -z "$SPARKLE_PRIVATE_KEY" ]; then
+            echo "❌ Error: SPARKLE_PRIVATE_KEY secret is not set."
+            echo "Please export your key using 'generate_keys -e' and add it as a repository secret named SPARKLE_PRIVATE_KEY."
+            echo "Note: The key should be the base64 string provided by the export command."
+            exit 1
+          fi
+          
+          echo "🔄 Generating appcast..."
+          echo "$SPARKLE_PRIVATE_KEY" | ./sparkle_tools/bin/generate_appcast --ed-key-file - public/
+
+      - name: Commit Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          if [[ -n $(git status -s public/) ]]; then
+            git add public/
+            git commit -m "chore: auto-update appcast.xml and deltas"
+            git push
+            echo "✅ Successfully updated appcast and deltas"
+          else
+            echo "ℹ️ No changes to appcast.xml"
+          fi
