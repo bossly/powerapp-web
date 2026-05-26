@@ -7,6 +7,18 @@
         <language>en</language>
         <!-- Sparkle's generate_appcast tool will automatically add <item> elements here based on your .zip or .dmg updates -->
         <item>
+            <title>0.1.3</title>
+            <pubDate>Tue, 26 May 2026 13:05:24 +0000</pubDate>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:shortVersionString>0.1.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
+            <enclosure url="https://bossly.github.io/powerapp-web/Power-v0.1.3-macOS.dmg" length="1939483" type="application/octet-stream" sparkle:edSignature="m39MduRf8fhDxMjdUZ30Eu3GJxMsV5NFC2iug8Bq/zETJZp8DwOpTeQKzyqiW6+XMILqrhGLHUarSAmEUJU6Cg=="/>
+            <sparkle:deltas>
+                <enclosure url="https://bossly.github.io/powerapp-web/Power14-12.delta" sparkle:deltaFrom="12" length="230426" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="980336" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="gGhnaVf8rQVYVsGD2Vk4fmGwVoM397p8qcRLiEyD5NQgGSf7UphEmv3yB0hGfV/PV0DkkRhQw/qkpiMD1zWFDg=="/>
+                <enclosure url="https://bossly.github.io/powerapp-web/Power14-10.delta" sparkle:deltaFrom="10" length="235450" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="980336" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="91OkwBC83O+8BzfLGA4osrCcY7UP5RvXkkVAhPdeV2/yfy538XU52zb0vwzOqOyikTOgOEf26XPKZrsNtbI2Bw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.2</title>
             <pubDate>Fri, 08 May 2026 17:36:58 +0000</pubDate>
             <sparkle:version>12</sparkle:version>
@@ -24,14 +36,6 @@
             <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
             <enclosure url="https://bossly.github.io/powerapp-web/Power-v0.1.1-macOS.dmg" length="1871132" type="application/octet-stream" sparkle:edSignature="xFbeCD7jImtGrJlzwzu8QGql04CdKLytluVrFXk416nIjUglwWtqVWNGpb7owLTuhWuAYquk3Cg6T5Kkxt4BDQ=="/>
-        </item>
-        <item>
-            <title>0.1</title>
-            <pubDate>Fri, 08 May 2026 15:57:00 +0300</pubDate>
-            <sparkle:version>0.1</sparkle:version>
-            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
-            <enclosure url="Power-v0.1.0-macOS.dmg" length="912254" type="application/octet-stream"/>
         </item>
     </channel>
 </rss>
