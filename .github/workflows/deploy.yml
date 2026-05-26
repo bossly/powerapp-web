@@ -6,6 +6,11 @@ on:
   push:
     branches: ['main', 'master']
 
+  workflow_run:
+    workflows: ["Generate Appcast"]
+    types:
+      - completed
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 

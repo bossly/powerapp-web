@@ -47,7 +47,7 @@ jobs:
             DMG_NAME=$(basename "$LATEST_DMG")
             echo "🔗 Latest DMG found: $DMG_NAME"
             # Update all references to .dmg files in index.html
-            sed -i '' "s|href=\"/.*\.dmg\"|href=\"/$DMG_NAME\"|g" index.html
+            sed -E -i '' "s|href=\"([^\"]*)/[^\/\"]*\.dmg\"|href=\"\1/$DMG_NAME\"|g" index.html
           else
             echo "⚠️ No DMG files found in public/"
           fi
