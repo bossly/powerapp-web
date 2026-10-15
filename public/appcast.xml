@@ -7,6 +7,19 @@
         <language>en</language>
         <!-- Sparkle's generate_appcast tool will automatically add <item> elements here based on your .zip or .dmg updates -->
         <item>
+            <title>0.2.0</title>
+            <pubDate>Wed, 14 Oct 2026 23:26:05 +0300</pubDate>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
+            <enclosure url="https://bossly.github.io/powerapp-web/Power-v0.2.0-macOS.dmg" length="3264358" type="application/octet-stream" sparkle:edSignature="/2Us7a8FVRvWicd9bFuHiAJnYqVWtfBQI//QwO2hZPSYhmKxy+T4erInnKlpZed61n3tFtBHzppNuxYZvrOHCQ=="/>
+            <sparkle:deltas>
+                <enclosure url="https://bossly.github.io/powerapp-web/Power15-14.delta" sparkle:deltaFrom="14" length="1155274" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="980336" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="NsnXbK91ElFyvx6Xk2j5HhuQ+eYa47fPMXM6K7DqtP3PE3vDjAtHyvbLJ9DYad2BBRPubng7XT6yE64hnw9NAg=="/>
+                <enclosure url="https://bossly.github.io/powerapp-web/Power15-12.delta" sparkle:deltaFrom="12" length="1174174" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="980336" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ev3tmBZQjvsLub4hCL01gvcerceY2QeotcXlI0X86lwUTaVpkx/pFq915uouAsxagDyJWhtpceWWic0KOFgUCw=="/>
+                <enclosure url="https://bossly.github.io/powerapp-web/Power15-10.delta" sparkle:deltaFrom="10" length="1174918" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="980336" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="BiXLLMHqwNvqUcB6bakxD8slPzFlHUUEDdH//PmIizcJTwl4+UF3sANx3i6ZaCJQ4eQPREu50v1c0EK5eprjCQ=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.3</title>
             <pubDate>Tue, 26 May 2026 13:05:24 +0000</pubDate>
             <sparkle:version>14</sparkle:version>
@@ -28,14 +41,6 @@
             <sparkle:deltas>
                 <enclosure url="https://bossly.github.io/powerapp-web/Power12-10.delta" sparkle:deltaFrom="10" length="83666" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="980336" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="JAl0OKn2m/HbEZQtI1rLZmtnBTZ6hed6AKesFRTVvPCuc/C/q/h4uWzSg4rJ1JmWytNBcK4ykd1Yvra759MQDQ=="/>
             </sparkle:deltas>
-        </item>
-        <item>
-            <title>0.1.1</title>
-            <pubDate>Fri, 08 May 2026 16:23:02 +0300</pubDate>
-            <sparkle:version>10</sparkle:version>
-            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.6</sparkle:minimumSystemVersion>
-            <enclosure url="https://bossly.github.io/powerapp-web/Power-v0.1.1-macOS.dmg" length="1871132" type="application/octet-stream" sparkle:edSignature="xFbeCD7jImtGrJlzwzu8QGql04CdKLytluVrFXk416nIjUglwWtqVWNGpb7owLTuhWuAYquk3Cg6T5Kkxt4BDQ=="/>
         </item>
     </channel>
 </rss>
