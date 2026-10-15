@@ -16,8 +16,13 @@
 ## Supported Devices
 
 - **Ecoflow**: River 2 (Max, Pro), Delta 2 (Max, Pro)
-- **Bluetti**: EB3A and other compatible models
+- **Bluetti**: EB3A, AC180, AC200, AC300, EP500, EP500P
+- **Anker**:
+  - **SOLIX Series**: C300(X), C300(X) DC, C800(X), C1000(X), C1000 Gen 2, F2000 (767 PowerHouse), F2600, F3800
+  - **Solarbank Series**: Solarbank 2 (E1600 Pro), Solarbank 3
+  - **Prime Series**: Prime Charger 160W, Prime Charger 250W, Prime MagGo 3-in-1 (A25X7), Prime Power Bank 20K (A110B / A1340)
 - **Jk-BMS**: JK-BMS20S001, JK-BMS20S002, ...
+- **Jackery**: Compatible power stations
 
 ## Installation
 
@@ -54,4 +59,4 @@ Since Power is self-signed (not notarized by Apple), macOS will block it on firs
 
 ## Disclaimer
 
-Power App is an independent application and is not affiliated with, authorized, maintained, sponsored, or endorsed by Bluetti, Ecoflow, JK-BMS, or any of their affiliates or subsidiaries. All product and company names are the registered trademarks of their original owners. The use of any trade name or trademark is for identification and reference purposes only and does not imply any association with the trademark holder or their product brand.
+Power App is an independent application and is not affiliated with, authorized, maintained, sponsored, or endorsed by Anker, Bluetti, Ecoflow, Jackery, JK-BMS, or any of their affiliates or subsidiaries. All product and company names are the registered trademarks of their original owners. The use of any trade name or trademark is for identification and reference purposes only and does not imply any association with the trademark holder or their product brand.

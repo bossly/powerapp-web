@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Track Download Button Clicks
-  document.querySelectorAll('a[href*="releases"]').forEach(btn => {
+  document.querySelectorAll('a[download], a[href*=".dmg"], a[href*="releases"]').forEach(btn => {
     btn.addEventListener('click', () => {
       trackEvent('download_click', { event_category: 'Engagement' });
     });
@@ -87,4 +87,53 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.3 }); // Trigger when 30% of the section is visible
     observer.observe(featuresSection);
   }
+
+  // --- Promo Video & Media Switcher ---
+  const videoWrapper = document.getElementById('video-wrapper');
+  const promoVideo = document.getElementById('hero-promo-video');
+  const screenshotImg = document.getElementById('hero-screenshot-img');
+  const showVideoBtn = document.getElementById('show-video-btn');
+  const showScreenBtn = document.getElementById('show-screen-btn');
+  const watchPromoBtn = document.getElementById('watch-promo-btn');
+  const mediaTitle = document.getElementById('media-title');
+
+  function setMode(mode) {
+    if (mode === 'video') {
+      videoWrapper.style.display = 'block';
+      screenshotImg.style.display = 'none';
+      showVideoBtn?.classList.add('active');
+      showScreenBtn?.classList.remove('active');
+      if (mediaTitle) mediaTitle.textContent = 'Power App — Promo Video';
+    } else {
+      videoWrapper.style.display = 'none';
+      screenshotImg.style.display = 'block';
+      showVideoBtn?.classList.remove('active');
+      showScreenBtn?.classList.add('active');
+      if (promoVideo && !promoVideo.paused) promoVideo.pause();
+      if (mediaTitle) mediaTitle.textContent = 'Power App — macOS Native Interface';
+    }
+  }
+
+  showVideoBtn?.addEventListener('click', () => {
+    setMode('video');
+    trackEvent('view_promo_video_tab', { event_category: 'Engagement' });
+  });
+
+  showScreenBtn?.addEventListener('click', () => {
+    setMode('screenshot');
+    trackEvent('view_screenshot_tab', { event_category: 'Engagement' });
+  });
+
+  watchPromoBtn?.addEventListener('click', () => {
+    setMode('video');
+    trackEvent('click_watch_promo_btn', { event_category: 'Engagement' });
+    if (promoVideo) {
+      promoVideo.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      promoVideo.play().catch(() => {});
+    }
+  });
+
+  promoVideo?.addEventListener('play', () => {
+    trackEvent('promo_video_play', { event_category: 'Engagement' });
+  });
 });

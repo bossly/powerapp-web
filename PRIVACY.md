@@ -16,7 +16,7 @@ At Power App, we believe in privacy as a fundamental right. This Privacy Policy 
 
 To function correctly, the application requires certain permissions:
 
-- **Bluetooth**: Used exclusively to discover and communicate with supported battery packs (e.g., Ecoflow, Bluetti, JK-BMS) via Bluetooth Low Energy (BLE).
+- **Bluetooth**: Used exclusively to discover and communicate with supported battery packs (e.g., Anker, Ecoflow, Bluetti, JK-BMS) via Bluetooth Low Energy (BLE).
 
 ## Changes to This Policy
 
@@ -28,4 +28,4 @@ If you have any questions about this Privacy Policy, you can open an issue on ou
 
 ## Disclaimer
 
-Power App is an independent application and is not affiliated with, authorized, maintained, sponsored, or endorsed by Bluetti, Ecoflow, JK-BMS, or any of their affiliates or subsidiaries. All product and company names are the registered trademarks of their original owners. The use of any trade name or trademark is for identification and reference purposes only and does not imply any association with the trademark holder or their product brand.
+Power App is an independent application and is not affiliated with, authorized, maintained, sponsored, or endorsed by Anker, Bluetti, Ecoflow, Jackery, JK-BMS, or any of their affiliates or subsidiaries. All product and company names are the registered trademarks of their original owners. The use of any trade name or trademark is for identification and reference purposes only and does not imply any association with the trademark holder or their product brand.

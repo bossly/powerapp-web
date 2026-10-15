@@ -51,7 +51,7 @@
   <main>
     <section class="hero container">
       <div class="hero-content">
-        <div class="badge">Pre-Release Available</div>
+        <div class="badge">v0.2.0 Pre-Release Available</div>
         <h1 class="fade-up">Master Your <br><span class="text-gradient">Portable Power</span></h1>
         <p class="fade-up delay-1">The ultimate native macOS application to monitor, track, and manage your Bluetooth
           battery packs in real-time.</p>
@@ -65,6 +65,12 @@
             </svg>
             Download Pre-Release
           </a>
+          <button id="watch-promo-btn" class="btn-secondary" style="cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            Watch Promo
+          </button>
           <a href="https://github.com/bossly/powerapp-web/issues/new" target="_blank" class="btn-outline">Provide
             Feedback</a>
         </div>
@@ -73,19 +79,35 @@
           <div class="brand-tags">
             <span class="brand-tag">Ecoflow</span>
             <span class="brand-tag">Bluetti</span>
+            <span class="brand-tag">Anker SOLIX</span>
             <span class="brand-tag">Jk-BMS</span>
+            <span class="brand-tag">Jackery</span>
           </div>
         </div>
       </div>
 
       <div class="hero-image-wrapper fade-up delay-2">
+        <div class="media-switch">
+          <button id="show-video-btn" class="media-tab active">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            Promo Video
+          </button>
+          <button id="show-screen-btn" class="media-tab">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+            Screenshot
+          </button>
+        </div>
         <div class="glass-panel screenshot-container">
           <div class="mac-header">
             <span class="mac-dot close"></span>
             <span class="mac-dot minimize"></span>
             <span class="mac-dot maximize"></span>
+            <span class="mac-title" id="media-title">Power App — Promo Video</span>
           </div>
-          <img src="/assets/hero-app.png" alt="Power App Screenshot" class="app-screenshot" />
+          <div id="video-wrapper">
+            <video id="hero-promo-video" src="/Power-Promo.mp4" poster="/assets/hero-app.png" controls playsinline preload="metadata" style="width: 100%; display: block; border-radius: 0 0 12px 12px; aspect-ratio: 16/9; background: #000;"></video>
+          </div>
+          <img id="hero-screenshot-img" src="/assets/hero-app.png" alt="Power App Screenshot" class="app-screenshot" style="display: none;" />
         </div>
       </div>
     </section>

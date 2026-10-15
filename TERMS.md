@@ -26,7 +26,7 @@ In no event shall the developer be liable for any indirect, incidental, special,
 
 ## 6. Disclaimer
 
-Power App is an independent application and is not affiliated with, authorized, maintained, sponsored, or endorsed by Bluetti, Ecoflow, JK-BMS, or any of their affiliates or subsidiaries. All product and company names are the registered trademarks of their original owners. The use of any trade name or trademark is for identification and reference purposes only and does not imply any association with the trademark holder or their product brand.
+Power App is an independent application and is not affiliated with, authorized, maintained, sponsored, or endorsed by Anker, Bluetti, Ecoflow, Jackery, JK-BMS, or any of their affiliates or subsidiaries. All product and company names are the registered trademarks of their original owners. The use of any trade name or trademark is for identification and reference purposes only and does not imply any association with the trademark holder or their product brand.
 
 ## 7. Contact
 

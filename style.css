@@ -292,6 +292,48 @@ nav a:not(.btn-secondary):hover {
 .mac-dot.minimize { background: #ffbd2e; }
 .mac-dot.maximize { background: #27c93f; }
 
+.media-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.media-tab {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+}
+
+.media-tab:hover {
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.media-tab.active {
+  background: rgba(0, 122, 255, 0.2);
+  border-color: rgba(0, 122, 255, 0.5);
+  color: #38bdf8;
+}
+
+.mac-title {
+  margin: 0 auto;
+  font-size: 11px;
+  color: #a1a1aa;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
 .app-screenshot {
   display: block;
   width: 100%;
