@@ -10,18 +10,22 @@
 
 - **Bluetooth Discovery**: Automatically discover compatible battery devices via BLE
 - **Real-time Monitoring**: Track battery status, charge levels, and vital information
+- **Port Control (Pro)**: Toggle AC, 12V DC, and USB output directly from your Mac
 - **Device Management**: Add devices to favorites for quick access
+- **macOS Widget**: Pinned desktop and Notification Center battery widgets
 - **WiFi Binding** (Optional): Connect devices via WiFi for extended control
 
 ## Supported Devices
 
-- **Ecoflow**: River 2 (Max, Pro), Delta 2 (Max, Pro)
+- **Ecoflow**:
+  - **Delta Series**: Delta 2, Delta 2 Max, Delta 2 (E980), Delta 3 1500, Delta Pro
+  - **River Series**: River 2, River 2 Max, River 2 Pro
 - **Bluetti**: EB3A, AC180, AC200, AC300, EP500, EP500P
 - **Anker**:
   - **SOLIX Series**: C300(X), C300(X) DC, C800(X), C1000(X), C1000 Gen 2, F2000 (767 PowerHouse), F2600, F3800
   - **Solarbank Series**: Solarbank 2 (E1600 Pro), Solarbank 3
   - **Prime Series**: Prime Charger 160W, Prime Charger 250W, Prime MagGo 3-in-1 (A25X7), Prime Power Bank 20K (A110B / A1340)
-- **Jk-BMS**: JK-BMS20S001, JK-BMS20S002, ...
+- **Jk-BMS**: JK-BMS20S001, JK-BMS20S002, JK_B2A8S20P, ...
 - **Jackery**: Compatible power stations
 
 ## Installation
